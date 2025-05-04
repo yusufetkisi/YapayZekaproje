@@ -1,0 +1,397 @@
+python programming language
+design philosophy emphasizes code readability use significant indentation
+python dynamically
+support multiple programming paradigm including structured particularly procedural functional programming
+often described battery included language due comprehensive standard library
+guido van rossum began working python late successor abc programming language first released python
+python released
+python released major revision completely earlier version
+python released last release python
+python consistently rank one popular programming language gained widespread use machine learning community
+history python conceived late guido van rossum centrum wiskunde informatica cwi netherlands conceived successor abc programming language inspired setl capable exception handling interfacing amoeba operating system
+python implementation began december
+van rossum assumed sole responsibility project lead developer july announced permanent vacation responsibility python benevolent dictator life bdfl title bestowed python community reflect commitment project chief
+since come retirement
+january active python core developer elected steering council lead project
+name python said derive british comedy series monty python flying circus
+python released october many major new feature list comprehension garbage collection reference counting unicode support
+python initially set postponed concern large body existing code could easily python
+longer receives security patch update
+python older version officially unsupported different unofficial python implementation pypy continues support python plus plus signifying least backported security update
+python released december new semantics changed syntax
+least every python release since unsupported added syntax language later release removed outdated module changed semantics least minor way
+april python latest stable release highly recommended upgrade upgrade older release
+version currently receives full security update python october active support april since security fix
+python oldest supported version python albeit support phase python become product
+starting python later version receive two year full support increased one half year followed three year security support total duration support previously
+security update expedited twice
+issue fixed september python version version including insecure issue leading possible remote code execution poisoning
+python added union type operator match case keywords structural pattern matching statement
+python expanded exception handling functionality
+python added new keyword type
+notable change version include increased program execution speed improved error reporting
+python claimed faster python python increase additional
+python also includes improved error message improved many change
+python introduces syntax type new improved interactive interpreter repl featuring editing color support incremental garbage collector result shorter pause collection program many object well increasing improved speed experimental jit compiler feature enabled specifically increase speed experimental build mode disables global interpreter lock gil allowing thread run concurrently enabled
+python introduces change behavior new semantics fixing bug removing many deprecated class function method well api outdated module
+old implementation local slow inconsistent buggy many corner case oddity
+code work around may need revising code us local simple templating print debugging continue work correctly
+python introduces experimental build mode disables global interpreter lock gil gil feature cpython previously prevented multiple thread executing python bytecode simultaneously
+optional build introduced pep enables better exploitation cpu
+allowing multiple thread run python code parallel mode address performance bottleneck associated gil
+change offer new path parallelism python without resorting multiprocessing external concurrency framework
+additional module removed python many deprecated class function method
+python add sigstore digital verification signature cpython artifact addition pgp
+use pgp criticized security practitioner python transitioning sigstore exclusively dropping pgp
+python removed wstr meaning python extension need modified added pattern matching language
+python dropped outdated module dropped future deprecated already deprecated array u format code emit deprecationwarning since removed python
+w format code used instead
+part ctypes also deprecated emit deprecationwarning removed
+using code already high potential security functionality bug
+part typing module deprecated
+creating class using keyword argument denote field disallowed python
+python alpha phase
+regard possible change annotation python import annotation continue work converting annotation string
+python enhancement proposal pep proposes standard format distributing python binary
+python make mode default mode supported current python version currently must opted
+already used default window operating system purpose exception opening file
+enabling also make code fully
+design philosophy feature python programming language
+programming structured programming fully supported many feature support functional programming programming including metaprogramming metaobjects
+many paradigm supported via extension including design contract logic programming
+python often referred language seamlessly integrate component written language
+python us dynamic typing combination reference counting garbage collector memory management
+us dynamic name resolution late binding bind method variable name program execution
+python design offer support functional programming lisp tradition
+filter mapandreduce function list comprehension dictionary set generator expression
+standard library two module itertools functools implement functional tool borrowed haskell standard ml
+python core philosophy summarized zen python pep includes aphorism beautiful better ugly
+explicit better implicit
+simple better complex
+complex better complicated
+readability count
+however python feature regularly violate principle received criticism adding unnecessary language bloat
+response criticism note zen python guideline rather rule
+addition new feature controversial guido van rossum resigned benevolent dictator life conflict adding assignment expression operator python
+nevertheless rather building functionality core python designed highly extensible via module
+compact modularity made particularly popular mean adding programmable interface existing application
+van rossum vision small core language large standard library easily extensible interpreter stemmed frustration abc represented opposite approach
+python claim strive simpler syntax grammar giving developer choice coding methodology
+contrast perl motto one way python advocate approach preferably way
+practice however python provides many way achieve given goal
+example least three way format string literal certainty one programmer use
+alex martelli fellow python software foundation python book author wrote describe something considered compliment python culture
+python developer usually try avoid premature optimization also reject patch part cpython reference implementation would offer marginal increase speed cost clarity
+execution speed improved moving function extension module written language c using compiler like pypy
+also possible language approach either fails achieve expected since python dynamic language restricted subset python compiled potential minor semantic change
+python developer aim language fun use
+goal reflected tribute british comedy group monty playful approach tutorial reference material
+instance code example use term spam egg reference monty python sketch rather typical term foo bar
+common neologism python community pythonic wide range meaning related program style
+pythonic code may use python idiom well natural show fluency language conform python minimalist philosophy emphasis readability
+syntax semantics python meant easily readable language
+formatting visually uncluttered often us english keywords language use punctuation
+unlike many language use curly bracket delimit block semicolon statement allowed rarely used
+fewer syntactic exception special case c pascal
+indentation python us whitespace indentation rather curly bracket keywords delimit block
+increase indentation come certain statement decrease indentation signifies end current block
+thus program visual structure accurately represents semantic structure
+feature sometimes termed rule
+language use indentation way indentation semantic meaning
+recommended indent size four space
+statement control flow python statement include following assignment statement using single equal sign statement conditionally executes block code along else elif contraction else statement iterates iterable object capturing element local variable use attached block statement executes block code long condition true try statement allows exception raised attached code block caught handled except clause new syntax except python exception group try statement also ensures code finally block always run regardless block exit raise statement used raise specified exception caught exception class statement executes block code attache local namespace class use programming def statement defines function method statement encloses code block within context manager allowing raii behavior replacing common idiom example context include acquiring lock code run releasing lock opening closing file break statement exit loop continue statement skip rest current iteration continues next del statement remove reference name value producing error variable referred redefined pas statement serving nop operation syntactically needed create empty code block assert statement used debugging check condition apply yield statement return value generator function also operator used implement coroutines return statement used return value function import statement used import module whose function variable used current program match case statement analogous switch statement construct compare expression one case measure
+assignment statement bind name reference separate dynamically allocated object
+variable may subsequently rebound time object
+python variable name generic reference holder without fixed data type however always refers object type
+called dynamic contrast language variable may contain value certain type
+python support tail call optimization continuation according van rossum language never
+however better support functionality provided extending python generator
+generator lazy iterators data passed unidirectionally generator
+python possible pas data back generator function version data passed multiple stack level
+expression python expression include following operator mathematical addition subtraction multiplication similar language behavior division differs
+two type division python floor division integer division division
+python us operator exponentiation
+python us operator string concatenation
+language us operator duplicating string specified number time
+infix operator intended used library numpy matrix multiplication
+syntax called walrus operator introduced python
+operator assigns value variable part larger expression
+python compare two object value
+python operator may used compare object identity comparison reference comparison may example b python us boolean operator
+python type expression called list comprehension general expression called generator expression
+anonymous function implemented using lambda expression however may one expression body
+conditional expression written x c else
+different operand order c
+x operator common many language
+python make distinction list tuples
+list written mutable used key dictionary since dictionary key must immutable python
+tuples written immutable thus used key dictionary provided tuple element immutable
+operator used concatenate two tuples directly modify content produce new tuple containing element
+example given variable initially equal executing first evaluates yield result assigned back effectively modifying content conforming immutable nature tuple object
+parenthesis optional tuples unambiguous context
+python feature sequence unpacking multiple expression evaluating something assignable variable writable property associated forming tuple literal whole result put side equal sign assignment statement
+statement expects iterable object side equal sign produce number value writable expression side iterating statement assigns value produced right corresponding expression left
+python string format operator function analogously printf format string c
+blah evaluates
+python operator supplemented format method str class blah
+python added spam blah egg spam egg
+string python concatenated adding using operator adding integer float spam egg return spameggs
+string contain number concatenated string rather integer
+return
+python support string literal several way delimited single double quotation mark single double quotation mark equivalent functionality unlike unix shell perl language
+mark use backslash escape character
+string interpolation became available python formatted string literal
+starting ending three single double quotation mark may span multiple line function like document shell perl ruby
+raw string variety denoted prefixing string literal escape sequence interpreted hence raw string useful literal backslashes common regular expression path
+compare c
+python array index array slicing expression list written key start stop start stop step
+index negative index relative end
+slice take element start index including stop index
+optional third slice parameter called step stride allows element skipped reversed
+slice index may example return copy entire list
+element slice shallow copy
+python distinction expression statement rigidly enforced contrast language common lisp scheme ruby
+distinction lead duplicating functionality example list comprehension conditional expression block eval exec function python exec statement former function expression latter statement statement part expression restriction expression list dict comprehension lambda expression contain statement
+particular case assignment statement part conditional expression conditional statement
+method method object function attached object class syntax normal method function argument syntactic sugar instance argument
+python method explicit self parameter access instance data contrast implicit self parameter programming language java ruby
+python also provides method often called dunder method name begin end double underscore method allow class modify handled native operation including length comparison arithmetic type conversion
+typing python us duck typing typed object untyped variable name
+type constraint checked definition time rather operation object may fail usage time indicating object appropriate type
+despite dynamically typed python strongly typed forbidding operation poorly defined adding number string rather quietly attempting interpret
+python allows programmer define type using class often programming
+new instance class constructed calling class example spamclass eggsclass class instance metaclass type instance thereby allowing metaprogramming reflection
+version python two kind class using syntax
+current python version support semantics new style
+python support optional type annotation
+annotation enforced language may used external tool mypy catch error
+mypy also support python compiler called mypyc leverage type annotation optimization
+arithmetic operation python includes conventional symbol arithmetic operator operator modulo operator
+module operator remainder negative
+python also offer symbol exponentiation
+also offer operator
+operator work traditional mathematics precedence rule infix operator also unary represent positive negative number respectively
+division integer produce result
+behavior division changed significantly time current version python since changed operator always represent division
+floor division operator introduced
+thus
+adding import division statement cause module python use python rule division instead see
+python term operator represents true division simply division operator represents floor division
+version operator represents classic division
+rounding towards negative infinity though different method language add consistency python
+instance rounding implies equation b always true
+rounding also implies equation b b valid positive negative value
+expected result b lie interval b b positive integer however maintaining validity equation requires result must lie interval b b negative
+python provides round function rounding float nearest integer
+python us round even method round round produce
+python version used method round round
+python allows boolean expression contain multiple equality relation consistent general usage mathematics
+example expression b c test whether less b b less language interpret expression differently c expression would first evaluate b resulting result would compared python us arithmetic integer operation
+decimal decimal module provides decimal number arbitrary precision several rounding mode
+fraction class fraction module provides arbitrary precision rational number
+due python extensive mathematics library library numpy language frequently used scientific scripting task numerical data processing manipulation
+function syntax function created python using def keyword
+function defined similarly called first providing function name required parameter
+example function print input assign default value function parameter case actual value provided run time syntax used inside function header
+code example hello world
+program program calculate factorial positive integer library python large standard library commonly cited one greatest strength
+application many standard format protocol mime http supported
+language includes module creating graphical user interface connecting relational database generating pseudorandom number arithmetic decimal manipulating regular expression unit testing
+part standard library covered example web server gateway interface wsgi implementation wsgiref follows pep part specified code internal documentation test suite
+however standard library python code module must altered rewritten variant implementation
+march python package index pypi official repository python software contains package
+wide range functionality including following development environment python implementation including cpython include loop repl permit environment function command line interpreter user enter statement sequentially receive result immediately
+python also bundled integrated development environment ide called idle oriented toward beginner
+shell including idle ipython add additional capability improved retention syntax highlighting
+standard desktop ides include pycharm intellij idea visual studio code also web ides following environment sagemath developing program jupyter notebook interactive computing platform pythonanywhere ide hosting environment canopy ide commercial ide emphasizes scientific computing
+implementation reference implementation cpython reference implementation python
+implementation written c meeting standard several select feature python us
+cpython includes c extension extension limited older c implemented using
+cpython compiles python program intermediate bytecode executed virtual machine
+cpython distributed large standard library written combination c native python
+cpython available many platform including window modern system including macos apple mac since python using experimental installer
+starting python python installer intentionally fails install window window xp supported python unofficial support vms
+platform portability one python earliest priority
+development python even solaris supported since time support dropped many platform
+current python version since support operating system feature
+implementation alternative implementation least slightly different semantic
+example alternative may include unordered dictionary contrast current python version
+another example larger python ecosystem pypy support full c python api
+alternative implementation include following pypy fast compliant interpreter python
+pypy compiler often improves speed significantly relative cpython pypy support library written pypy offer support architecture example
+codon implentation aot compiler compiles language whose syntax semantics nearly identical python notable difference example codon us machine integer speed arbitrarily python codon developer claim speedup cpython usually order ten hundred time
+codon compiles machine code via llvm support native multithreading
+codon also compile python extension module imported used python
+stackless python significant fork cpython implement microthreads
+implementation us call stack differently thus allowing massively concurrent program
+pypy also offer stackless version
+micropython circuitpython python variant optimized microcontrollers including lego mindstorms
+pyston variant python runtime us compilation speed execution python program
+cinder fork cpython feature number optimization including bytecode inline caching eager evaluation coroutines jit experimental bytecode compiler
+snek embedded computing language python
+possible write snek program run full python system python program run snek
+snek compatible avr microcontrollers atmega arduino well larger microcontrollers compatible micropython
+snek imperative language unlike python omits programming
+snek support one numeric data type feature single precision resembling javascript number though smaller
+unsupported implementation python compiler developed unsupported google began project named unladen swallow project aimed speed python interpreter using llvm improve multithreading capability scaling thousand core typical implementation limited global interpreter lock
+psyco discontinued specializing compiler integrates cpython transforms bytecode machine code runtime
+emitted code specialized certain data type faster standard python code
+psyco support python later
+python interpreter series mobile phone released nokia
+interpreter implemented many module python standard library well additional module integration symbian operating system
+nokia also support python gtk widget library allowing program written run target device
+language several object language source language unrestricted python subset python language similar python brython transcrypt pyjs compile python javascript
+latest release pyjs
+cython compiles superset python resulting code used python via direct api call python interpreter
+pyjl subset python maintainable julia source code
+despite developer performance claim possible arbitrary python code compiling faster language machine code known impossible general case
+semantics python might potentially changed many case speedup possible change python code
+faster julia source code used python compiled machine code
+nuitka compiles python compiler work python python main supported platform window even window xp android
+compiler developer claim full support python partial support python experimental support python
+nuitka support macos including apple version
+compiler free cost though commercial hiding source code
+numba jit compiler used python compiler translates subset python numpy code fast machine code
+tool enabled adding decorator relevant python code
+pythran compiles subset python
+rpython compiled c used build pypy interpreter python
+python transpiler compiles subset python
+also specialized compiler myhdl hardware description language hdl convert myhdl code verilog vhdl code
+older project existed well compiler designed use python related syntax google grumpy transpiles python go
+latest release
+ironpython allows running python program common language runtime
+alpha version released available python although feature behavior later version may included
+jython compiles python java bytecode allowing use java library python program
+pyrex last released shed skin last released compile c respectively
+performance perforance comparison among various python implementation using combinatorial workload presented euroscipy
+addition python performance relative programming language benchmarked computer language benchmark game
+several approach optimizing python performance given inherent slowness interpreted language
+approach include following strategy tool compilation dynamically compiling python code executed
+technique used library numba pypy
+static compilation python code compiled machine code sometime execution
+example approach cython compiles python concurrency parallelism multiple task run simultaneously
+python contains module multiprocessing support form parallelism
+moreover approach help overcome limitation global interpreter lock gil cpu task
+efficient data structure performance also improved using data type set membership test deque collection queue operation
+language development python development conducted largely python enhancement proposal pep process process primary mechanism proposing major new feature collecting community input issue documenting python design decision
+python coding style covered pep
+outstanding pep reviewed commented python community steering council
+enhancement language corresponds development cpython reference implementation
+mailing list primary forum language development
+specific issue originally discussed roundup bug tracker hosted foundation
+issue discussion migrated github
+development originally took place repository running mercurial python moved github january
+cpython public release three type distinguished part version number incremented version code expected break must manually ported
+first part version number incremented
+release happen released year
+according guido van rossum version probably never exist
+major feature release largely compatible previous version introduce new feature
+second part version number incremented
+starting python release expected occur annually
+major version supported bug fix several year release
+bug fix release introduce new feature occur approximately every three month release made sufficient number bug fixed upstream since last release
+security vulnerability also patched release
+third final part version number incremented
+many alpha beta also released preview testing final release
+although rough schedule release often delayed code ready yet
+python development team monitor state code running large unit test suite development
+major academic conference python pycon
+also special python mentoring program pyladies
+api documentation generator tool generate documentation python api include pydoc available part standard library sphinx pdoc fork doxygen graphviz
+naming python name inspired british comedy group monty python python creator guido van rossum enjoyed developing language
+monty python reference appear frequently python code culture example metasyntactic variable often used python literature spam egg rather traditional foo bar
+official python documentation also contains various reference monty python routine
+python user sometimes referred pythonistas
+affix often used naming python application library
+example include following pygame binding simple directmedia layer python commonly used create game pyqt pygtk bind qt gtk python respectively pypy python implementation originally written python numpy python library numerical processing
+popularity since python consistently ranked top ten popular programming language tiobe programming community index december python popular language
+python selected programming language year highest rise rating year language done four time
+tiobe index monthly ranking based volume search programming language google amazon wikipedia bing platform
+according accompanying graph python shown marked upward trend since early eventually passing established language c java
+trend attributed python readable syntax comprehensive standard library application data science machine learning field
+large organization use python include wikipedia google yahoo cern nasa facebook amazon instagram spotify smaller entity industrial light magic ita
+social news networking site reddit developed mostly python
+organization partly use python include discord baidu
+type use python many us including following scripting web application scientific computing project graphical user interface desktop environment embedded scripting software hardware product operating system information security python serve scripting language web application via module apache web server
+web server gateway interface standard api evolved facilitate application
+web framework django pylon pyramid turbogears tornado flask bottle zope support developer design maintenance complex application
+pyjs ironpython used develop application
+sqlalchemy used data mapper relational database
+twisted framework program communication computer framework used dropbox example
+library numpy scipy matplotlib allow effective use python scientific computing specialized library biopython astropy providing functionality
+sagemath computer algebra system notebook interface programmable python sagemath library cover many aspect mathematics including algebra combinatorics numerical mathematics number theory calculus
+opencv python binding rich set feature computer vision image processing
+python commonly used project support library tensorflow kera pytorch problog logic language
+scripting language modular architecture simple syntax rich text processing tool python often used natural language processing
+combination python prolog proven useful ai application prolog providing knowledge representation reasoning capability
+janus system particular exploit similarity two language part dynamic typing simple recursive data structure
+combination typically applied natural language processing visual query answering geospatial reasoning handling semantic web data
+natlog system implemented python us definite clause grammar dcgs create prompt two type generator generator generator stable diffusion
+python used graphical user interface gui using library tkinter
+similarly one laptop per child xo computer sugar desktop environment written python
+python embedded many software product hardware product scripting language
+product include following finite element method software abaqus parametric modeler freecad animation package max blender cinema lightwave houdini maya modo motionbuilder softimage visual effect compositor nuke imaging program gimp inkscape scribus paint shop pro musical notation program scorewriter capella
+similarly gnu debugger us python pretty printer show complex structure container
+esri promotes python best choice writing script arcgis
+python also used several video game adopted first three programming language available google app engine two java go
+libreoffice includes python developer plan replace java python libreoffice python scripting provider core feature since version february
+among hardware product raspberry pi computer project adopted python main language
+many operating system include python standard component
+python ship linux distribution amigaos using python freebsd package netbsd openbsd package used command line terminal
+many linux distribution use installers written python ubuntu us ubiquity installer red hat linux fedora linux use anaconda installer
+gentoo linux us python package management system portage
+python used extensively information security industry including exploit development
+language influenced python python design philosophy influenced many programming language boo us indentation similar syntax similar object model
+cobra us indentation similar syntax acknowledgement document list python first among influencing language
+coffeescript programming language javascript syntax
+borrowed iterators generator python
+gdscript scripting language built godot game engine
+go designed speed working dynamic language like python go share python syntax slicing array
+groovy motivated desire incorporate python design philosophy java
+julia designed usable general programming python
+mojo superset python omitting class adding struct
+nim us indentation similar syntax
+ruby creator yukihiro matsumoto said wanted scripting language powerful perl python
+decided design language
+swift programming language developed apple syntax
+kotlin blend python java feature minimizes boilerplate code enhances developer efficiency
+python development practice also emulated language
+example python requires document describes rationale context language change document known python enhancement proposal pep
+practice also used developer tcl erlang swift
+see also python syntax semantics pip package manager list programming language history programming language comparison programming language note reference source python artificial intelligence
+python wiki
+july
+archived original november
+retrieved december
+paine jocelyn ed
+august
+ai python
+ai expert newsletter
+amzi
+archived original march
+retrieved february
+pyaiml python package index
+""
+retrieved july
+russell stuart j
+norvig peter
+artificial intelligence modern approach ed
+upper saddle river nj prentice hall
+isbn
+reading downey allen july
+think python think like computer scientist ed
+medium
+isbn
+lutz mark
+learning python ed
+medium
+isbn
+summerfield mark
+programming python ed
+professional
+isbn
+ramalho luciano may
+fluent python
+medium
+isbn
+external link official website python tutorial

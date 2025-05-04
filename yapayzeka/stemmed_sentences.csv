@@ -1,0 +1,397 @@
+python program languag
+design philosophi emphas code readabl use signific indent
+python dynam
+support multipl program paradigm includ structur particularli procedur function program
+often describ batteri includ languag due comprehens standard librari
+guido van rossum began work python late successor abc program languag first releas python
+python releas
+python releas major revis complet earlier version
+python releas last releas python
+python consist rank one popular program languag gain widespread use machin learn commun
+histori python conceiv late guido van rossum centrum wiskund informatica cwi netherland conceiv successor abc program languag inspir setl capabl except handl interfac amoeba oper system
+python implement began decemb
+van rossum assum sole respons project lead develop juli announc perman vacat respons python benevol dictat life bdfl titl bestow python commun reflect commit project chief
+sinc come retir
+januari activ python core develop elect steer council lead project
+name python said deriv british comedi seri monti python fli circu
+python releas octob mani major new featur list comprehens garbag collect refer count unicod support
+python initi set postpon concern larg bodi exist code could easili python
+longer receiv secur patch updat
+python older version offici unsupport differ unoffici python implement pypi continu support python plu plu signifi least backport secur updat
+python releas decemb new semant chang syntax
+least everi python releas sinc unsupport ad syntax languag later releas remov outdat modul chang semant least minor way
+april python latest stabl releas highli recommend upgrad upgrad older releas
+version current receiv full secur updat python octob activ support april sinc secur fix
+python oldest support version python albeit support phase python becom product
+start python later version receiv two year full support increas one half year follow three year secur support total durat support previous
+secur updat expedit twice
+issu fix septemb python version version includ insecur issu lead possibl remot code execut poison
+python ad union type oper match case keyword structur pattern match statement
+python expand except handl function
+python ad new keyword type
+notabl chang version includ increas program execut speed improv error report
+python claim faster python python increas addit
+python also includ improv error messag improv mani chang
+python introduc syntax type new improv interact interpret repl featur edit color support increment garbag collector result shorter paus collect program mani object well increas improv speed experiment jit compil featur enabl specif increas speed experiment build mode disabl global interpret lock gil allow thread run concurr enabl
+python introduc chang behavior new semant fix bug remov mani deprec class function method well api outdat modul
+old implement local slow inconsist buggi mani corner case odditi
+code work around may need revis code use local simpl templat print debug continu work correctli
+python introduc experiment build mode disabl global interpret lock gil gil featur cpython previous prevent multipl thread execut python bytecod simultan
+option build introduc pep enabl better exploit cpu
+allow multipl thread run python code parallel mode address perform bottleneck associ gil
+chang offer new path parallel python without resort multiprocess extern concurr framework
+addit modul remov python mani deprec class function method
+python add sigstor digit verif signatur cpython artifact addit pgp
+use pgp critic secur practition python transit sigstor exclus drop pgp
+python remov wstr mean python extens need modifi ad pattern match languag
+python drop outdat modul drop futur deprec alreadi deprec array u format code emit deprecationwarn sinc remov python
+w format code use instead
+part ctype also deprec emit deprecationwarn remov
+use code alreadi high potenti secur function bug
+part type modul deprec
+creat class use keyword argument denot field disallow python
+python alpha phase
+regard possibl chang annot python import annot continu work convert annot string
+python enhanc propos pep propos standard format distribut python binari
+python make mode default mode support current python version current must opt
+alreadi use default window oper system purpos except open file
+enabl also make code fulli
+design philosophi featur python program languag
+program structur program fulli support mani featur support function program program includ metaprogram metaobject
+mani paradigm support via extens includ design contract logic program
+python often refer languag seamlessli integr compon written languag
+python use dynam type combin refer count garbag collector memori manag
+use dynam name resolut late bind bind method variabl name program execut
+python design offer support function program lisp tradit
+filter mapandreduc function list comprehens dictionari set gener express
+standard librari two modul itertool functool implement function tool borrow haskel standard ml
+python core philosophi summar zen python pep includ aphor beauti better ugli
+explicit better implicit
+simpl better complex
+complex better complic
+readabl count
+howev python featur regularli violat principl receiv critic ad unnecessari languag bloat
+respons critic note zen python guidelin rather rule
+addit new featur controversi guido van rossum resign benevol dictat life conflict ad assign express oper python
+nevertheless rather build function core python design highli extens via modul
+compact modular made particularli popular mean ad programm interfac exist applic
+van rossum vision small core languag larg standard librari easili extens interpret stem frustrat abc repres opposit approach
+python claim strive simpler syntax grammar give develop choic code methodolog
+contrast perl motto one way python advoc approach prefer way
+practic howev python provid mani way achiev given goal
+exampl least three way format string liter certainti one programm use
+alex martelli fellow python softwar foundat python book author wrote describ someth consid compliment python cultur
+python develop usual tri avoid prematur optim also reject patch part cpython refer implement would offer margin increas speed cost clariti
+execut speed improv move function extens modul written languag c use compil like pypi
+also possibl languag approach either fail achiev expect sinc python dynam languag restrict subset python compil potenti minor semant chang
+python develop aim languag fun use
+goal reflect tribut british comedi group monti play approach tutori refer materi
+instanc code exampl use term spam egg refer monti python sketch rather typic term foo bar
+common neolog python commun python wide rang mean relat program style
+python code may use python idiom well natur show fluenci languag conform python minimalist philosophi emphasi readabl
+syntax semant python meant easili readabl languag
+format visual unclutt often use english keyword languag use punctuat
+unlik mani languag use curli bracket delimit block semicolon statement allow rare use
+fewer syntact except special case c pascal
+indent python use whitespac indent rather curli bracket keyword delimit block
+increas indent come certain statement decreas indent signifi end current block
+thu program visual structur accur repres semant structur
+featur sometim term rule
+languag use indent way indent semant mean
+recommend indent size four space
+statement control flow python statement includ follow assign statement use singl equal sign statement condit execut block code along els elif contract els statement iter iter object captur element local variabl use attach block statement execut block code long condit true tri statement allow except rais attach code block caught handl except claus new syntax except python except group tri statement also ensur code final block alway run regardless block exit rais statement use rais specifi except caught except class statement execut block code attach local namespac class use program def statement defin function method statement enclos code block within context manag allow raii behavior replac common idiom exampl context includ acquir lock code run releas lock open close file break statement exit loop continu statement skip rest current iter continu next del statement remov refer name valu produc error variabl refer redefin pass statement serv nop oper syntact need creat empti code block assert statement use debug check condit appli yield statement return valu gener function also oper use implement coroutin return statement use return valu function import statement use import modul whose function variabl use current program match case statement analog switch statement construct compar express one case measur
+assign statement bind name refer separ dynam alloc object
+variabl may subsequ rebound time object
+python variabl name gener refer holder without fix data type howev alway refer object type
+call dynam contrast languag variabl may contain valu certain type
+python support tail call optim continu accord van rossum languag never
+howev better support function provid extend python gener
+gener lazi iter data pass unidirect gener
+python possibl pass data back gener function version data pass multipl stack level
+express python express includ follow oper mathemat addit subtract multipl similar languag behavior divis differ
+two type divis python floor divis integ divis divis
+python use oper exponenti
+python use oper string concaten
+languag use oper duplic string specifi number time
+infix oper intend use librari numpi matrix multipl
+syntax call walru oper introduc python
+oper assign valu variabl part larger express
+python compar two object valu
+python oper may use compar object ident comparison refer comparison may exampl b python use boolean oper
+python type express call list comprehens gener express call gener express
+anonym function implement use lambda express howev may one express bodi
+condit express written x c els
+differ operand order c
+x oper common mani languag
+python make distinct list tupl
+list written mutabl use key dictionari sinc dictionari key must immut python
+tupl written immut thu use key dictionari provid tupl element immut
+oper use concaten two tupl directli modifi content produc new tupl contain element
+exampl given variabl initi equal execut first evalu yield result assign back effect modifi content conform immut natur tupl object
+parenthes option tupl unambigu context
+python featur sequenc unpack multipl express evalu someth assign variabl writabl properti associ form tupl liter whole result put side equal sign assign statement
+statement expect iter object side equal sign produc number valu writabl express side iter statement assign valu produc right correspond express left
+python string format oper function analog printf format string c
+blah evalu
+python oper supplement format method str class blah
+python ad spam blah egg spam egg
+string python concaten ad use oper ad integ float spam egg return spamegg
+string contain number concaten string rather integ
+return
+python support string liter sever way delimit singl doubl quotat mark singl doubl quotat mark equival function unlik unix shell perl languag
+mark use backslash escap charact
+string interpol becam avail python format string liter
+start end three singl doubl quotat mark may span multipl line function like document shell perl rubi
+raw string varieti denot prefix string liter escap sequenc interpret henc raw string use liter backslash common regular express path
+compar c
+python array index array slice express list written key start stop start stop step
+index neg index rel end
+slice take element start index includ stop index
+option third slice paramet call step stride allow element skip revers
+slice index may exampl return copi entir list
+element slice shallow copi
+python distinct express statement rigidli enforc contrast languag common lisp scheme rubi
+distinct lead duplic function exampl list comprehens condit express block eval exec function python exec statement former function express latter statement statement part express restrict express list dict comprehens lambda express contain statement
+particular case assign statement part condit express condit statement
+method method object function attach object class syntax normal method function argument syntact sugar instanc argument
+python method explicit self paramet access instanc data contrast implicit self paramet program languag java rubi
+python also provid method often call dunder method name begin end doubl underscor method allow class modifi handl nativ oper includ length comparison arithmet type convers
+type python use duck type type object untyp variabl name
+type constraint check definit time rather oper object may fail usag time indic object appropri type
+despit dynam type python strongli type forbid oper poorli defin ad number string rather quietli attempt interpret
+python allow programm defin type use class often program
+new instanc class construct call class exampl spamclass eggsclass class instanc metaclass type instanc therebi allow metaprogram reflect
+version python two kind class use syntax
+current python version support semant new style
+python support option type annot
+annot enforc languag may use extern tool mypi catch error
+mypi also support python compil call mypyc leverag type annot optim
+arithmet oper python includ convent symbol arithmet oper oper modulo oper
+modul oper remaind neg
+python also offer symbol exponenti
+also offer oper
+oper work tradit mathemat preced rule infix oper also unari repres posit neg number respect
+divis integ produc result
+behavior divis chang significantli time current version python sinc chang oper alway repres divis
+floor divis oper introduc
+thu
+ad import divis statement caus modul python use python rule divis instead see
+python term oper repres true divis simpli divis oper repres floor divis
+version oper repres classic divis
+round toward neg infin though differ method languag add consist python
+instanc round impli equat b alway true
+round also impli equat b b valid posit neg valu
+expect result b lie interv b b posit integ howev maintain valid equat requir result must lie interv b b neg
+python provid round function round float nearest integ
+python use round even method round round produc
+python version use method round round
+python allow boolean express contain multipl equal relat consist gener usag mathemat
+exampl express b c test whether less b b less languag interpret express differ c express would first evalu b result result would compar python use arithmet integ oper
+decim decim modul provid decim number arbitrari precis sever round mode
+fraction class fraction modul provid arbitrari precis ration number
+due python extens mathemat librari librari numpi languag frequent use scientif script task numer data process manipul
+function syntax function creat python use def keyword
+function defin similarli call first provid function name requir paramet
+exampl function print input assign default valu function paramet case actual valu provid run time syntax use insid function header
+code exampl hello world
+program program calcul factori posit integ librari python larg standard librari commonli cite one greatest strength
+applic mani standard format protocol mime http support
+languag includ modul creat graphic user interfac connect relat databas gener pseudorandom number arithmet decim manipul regular express unit test
+part standard librari cover exampl web server gateway interfac wsgi implement wsgiref follow pep part specifi code intern document test suit
+howev standard librari python code modul must alter rewritten variant implement
+march python packag index pypi offici repositori python softwar contain packag
+wide rang function includ follow develop environ python implement includ cpython includ loop repl permit environ function command line interpret user enter statement sequenti receiv result immedi
+python also bundl integr develop environ ide call idl orient toward beginn
+shell includ idl ipython add addit capabl improv retent syntax highlight
+standard desktop ide includ pycharm intellij idea visual studio code also web ide follow environ sagemath develop program jupyt notebook interact comput platform pythonanywher ide host environ canopi ide commerci ide emphas scientif comput
+implement refer implement cpython refer implement python
+implement written c meet standard sever select featur python use
+cpython includ c extens extens limit older c implement use
+cpython compil python program intermedi bytecod execut virtual machin
+cpython distribut larg standard librari written combin c nativ python
+cpython avail mani platform includ window modern system includ maco appl mac sinc python use experiment instal
+start python python instal intent fail instal window window xp support python unoffici support vm
+platform portabl one python earliest prioriti
+develop python even solari support sinc time support drop mani platform
+current python version sinc support oper system featur
+implement altern implement least slightli differ semant
+exampl altern may includ unord dictionari contrast current python version
+anoth exampl larger python ecosystem pypi support full c python api
+altern implement includ follow pypi fast compliant interpret python
+pypi compil often improv speed significantli rel cpython pypi support librari written pypi offer support architectur exampl
+codon implent aot compil compil languag whose syntax semant nearli ident python notabl differ exampl codon use machin integ speed arbitrarili python codon develop claim speedup cpython usual order ten hundr time
+codon compil machin code via llvm support nativ multithread
+codon also compil python extens modul import use python
+stackless python signific fork cpython implement microthread
+implement use call stack differ thu allow massiv concurr program
+pypi also offer stackless version
+micropython circuitpython python variant optim microcontrol includ lego mindstorm
+pyston variant python runtim use compil speed execut python program
+cinder fork cpython featur number optim includ bytecod inlin cach eager evalu coroutin jit experiment bytecod compil
+snek embed comput languag python
+possibl write snek program run full python system python program run snek
+snek compat avr microcontrol atmega arduino well larger microcontrol compat micropython
+snek imper languag unlik python omit program
+snek support one numer data type featur singl precis resembl javascript number though smaller
+unsupport implement python compil develop unsupport googl began project name unladen swallow project aim speed python interpret use llvm improv multithread capabl scale thousand core typic implement limit global interpret lock
+psyco discontinu special compil integr cpython transform bytecod machin code runtim
+emit code special certain data type faster standard python code
+psyco support python later
+python interpret seri mobil phone releas nokia
+interpret implement mani modul python standard librari well addit modul integr symbian oper system
+nokia also support python gtk widget librari allow program written run target devic
+languag sever object languag sourc languag unrestrict python subset python languag similar python brython transcrypt pyj compil python javascript
+latest releas pyj
+cython compil superset python result code use python via direct api call python interpret
+pyjl subset python maintain julia sourc code
+despit develop perform claim possibl arbitrari python code compil faster languag machin code known imposs gener case
+semant python might potenti chang mani case speedup possibl chang python code
+faster julia sourc code use python compil machin code
+nuitka compil python compil work python python main support platform window even window xp android
+compil develop claim full support python partial support python experiment support python
+nuitka support maco includ appl version
+compil free cost though commerci hide sourc code
+numba jit compil use python compil translat subset python numpi code fast machin code
+tool enabl ad decor relev python code
+pythran compil subset python
+rpython compil c use build pypi interpret python
+python transpil compil subset python
+also special compil myhdl hardwar descript languag hdl convert myhdl code verilog vhdl code
+older project exist well compil design use python relat syntax googl grumpi transpil python go
+latest releas
+ironpython allow run python program common languag runtim
+alpha version releas avail python although featur behavior later version may includ
+jython compil python java bytecod allow use java librari python program
+pyrex last releas shed skin last releas compil c respect
+perform perfor comparison among variou python implement use combinatori workload present euroscipi
+addit python perform rel program languag benchmark comput languag benchmark game
+sever approach optim python perform given inher slow interpret languag
+approach includ follow strategi tool compil dynam compil python code execut
+techniqu use librari numba pypi
+static compil python code compil machin code sometim execut
+exampl approach cython compil python concurr parallel multipl task run simultan
+python contain modul multiprocess support form parallel
+moreov approach help overcom limit global interpret lock gil cpu task
+effici data structur perform also improv use data type set membership test dequ collect queue oper
+languag develop python develop conduct larg python enhanc propos pep process process primari mechan propos major new featur collect commun input issu document python design decis
+python code style cover pep
+outstand pep review comment python commun steer council
+enhanc languag correspond develop cpython refer implement
+mail list primari forum languag develop
+specif issu origin discuss roundup bug tracker host foundat
+issu discuss migrat github
+develop origin took place repositori run mercuri python move github januari
+cpython public releas three type distinguish part version number increment version code expect break must manual port
+first part version number increment
+releas happen releas year
+accord guido van rossum version probabl never exist
+major featur releas larg compat previou version introduc new featur
+second part version number increment
+start python releas expect occur annual
+major version support bug fix sever year releas
+bug fix releas introduc new featur occur approxim everi three month releas made suffici number bug fix upstream sinc last releas
+secur vulner also patch releas
+third final part version number increment
+mani alpha beta also releas preview test final releas
+although rough schedul releas often delay code readi yet
+python develop team monitor state code run larg unit test suit develop
+major academ confer python pycon
+also special python mentor program pyladi
+api document gener tool gener document python api includ pydoc avail part standard librari sphinx pdoc fork doxygen graphviz
+name python name inspir british comedi group monti python python creator guido van rossum enjoy develop languag
+monti python refer appear frequent python code cultur exampl metasyntact variabl often use python literatur spam egg rather tradit foo bar
+offici python document also contain variou refer monti python routin
+python user sometim refer pythonista
+affix often use name python applic librari
+exampl includ follow pygam bind simpl directmedia layer python commonli use creat game pyqt pygtk bind qt gtk python respect pypi python implement origin written python numpi python librari numer process
+popular sinc python consist rank top ten popular program languag tiob program commun index decemb python popular languag
+python select program languag year highest rise rate year languag done four time
+tiob index monthli rank base volum search program languag googl amazon wikipedia bing platform
+accord accompani graph python shown mark upward trend sinc earli eventu pass establish languag c java
+trend attribut python readabl syntax comprehens standard librari applic data scienc machin learn field
+larg organ use python includ wikipedia googl yahoo cern nasa facebook amazon instagram spotifi smaller entiti industri light magic ita
+social news network site reddit develop mostli python
+organ partli use python includ discord baidu
+type use python mani use includ follow script web applic scientif comput project graphic user interfac desktop environ embed script softwar hardwar product oper system inform secur python serv script languag web applic via modul apach web server
+web server gateway interfac standard api evolv facilit applic
+web framework django pylon pyramid turbogear tornado flask bottl zope support develop design mainten complex applic
+pyj ironpython use develop applic
+sqlalchemi use data mapper relat databas
+twist framework program commun comput framework use dropbox exampl
+librari numpi scipi matplotlib allow effect use python scientif comput special librari biopython astropi provid function
+sagemath comput algebra system notebook interfac programm python sagemath librari cover mani aspect mathemat includ algebra combinator numer mathemat number theori calculu
+opencv python bind rich set featur comput vision imag process
+python commonli use project support librari tensorflow kera pytorch problog logic languag
+script languag modular architectur simpl syntax rich text process tool python often use natur languag process
+combin python prolog proven use ai applic prolog provid knowledg represent reason capabl
+janu system particular exploit similar two languag part dynam type simpl recurs data structur
+combin typic appli natur languag process visual queri answer geospati reason handl semant web data
+natlog system implement python use definit claus grammar dcg creat prompt two type gener gener gener stabl diffus
+python use graphic user interfac gui use librari tkinter
+similarli one laptop per child xo comput sugar desktop environ written python
+python embed mani softwar product hardwar product script languag
+product includ follow finit element method softwar abaqu parametr model freecad anim packag max blender cinema lightwav houdini maya modo motionbuild softimag visual effect compositor nuke imag program gimp inkscap scribu paint shop pro music notat program scorewrit capella
+similarli gnu debugg use python pretti printer show complex structur contain
+esri promot python best choic write script arcgi
+python also use sever video game adopt first three program languag avail googl app engin two java go
+libreoffic includ python develop plan replac java python libreoffic python script provid core featur sinc version februari
+among hardwar product raspberri pi comput project adopt python main languag
+mani oper system includ python standard compon
+python ship linux distribut amigao use python freebsd packag netbsd openbsd packag use command line termin
+mani linux distribut use instal written python ubuntu use ubiqu instal red hat linux fedora linux use anaconda instal
+gentoo linux use python packag manag system portag
+python use extens inform secur industri includ exploit develop
+languag influenc python python design philosophi influenc mani program languag boo use indent similar syntax similar object model
+cobra use indent similar syntax acknowledg document list python first among influenc languag
+coffeescript program languag javascript syntax
+borrow iter gener python
+gdscript script languag built godot game engin
+go design speed work dynam languag like python go share python syntax slice array
+groovi motiv desir incorpor python design philosophi java
+julia design usabl gener program python
+mojo superset python omit class ad struct
+nim use indent similar syntax
+rubi creator yukihiro matsumoto said want script languag power perl python
+decid design languag
+swift program languag develop appl syntax
+kotlin blend python java featur minim boilerpl code enhanc develop effici
+python develop practic also emul languag
+exampl python requir document describ rational context languag chang document known python enhanc propos pep
+practic also use develop tcl erlang swift
+see also python syntax semant pip packag manag list program languag histori program languag comparison program languag note refer sourc python artifici intellig
+python wiki
+juli
+archiv origin novemb
+retriev decemb
+pain jocelyn ed
+august
+ai python
+ai expert newslett
+amzi
+archiv origin march
+retriev februari
+pyaiml python packag index
+""
+retriev juli
+russel stuart j
+norvig peter
+artifici intellig modern approach ed
+upper saddl river nj prentic hall
+isbn
+read downey allen juli
+think python think like comput scientist ed
+media
+isbn
+lutz mark
+learn python ed
+media
+isbn
+summerfield mark
+program python ed
+profession
+isbn
+ramalho luciano may
+fluent python
+media
+isbn
+extern link offici websit python tutori
